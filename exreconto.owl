@@ -1,0 +1,914 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://gaia.fdi.ucm.es/ontologies/exreconto.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://gaia.fdi.ucm.es/ontologies/exreconto.owl"
+     versionIRI="http://gaia.fdi.ucm.es/ontologies/exreconto.owl">
+    <Prefix name="" IRI="http://gaia.fdi.ucm.es/ontologies/exreconto.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.0.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ExRecOnto is an ontology to categorize explanations in recommender systems.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ExRecOnto is an ontology to categorize explanations in recommender systems.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ExRecOnto</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Marta Caro-Martínez, Guillermo Jiménez-Díaz, Juan A. Recio-García</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">English</Literal>
+    </Annotation>
+    <Declaration>
+        <NamedIndividual IRI="#Stakeholders"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Positive"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBuiltBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#External"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#determinates"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Schematic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Multi-level"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Improve_User_Experience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Machine_Learning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Recommendation_Process"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scrutability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Argumentation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ad-hoc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Detail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Context"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mathematical_Model"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Effectiveness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Background_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Low-Level"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Proactive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Persuasiveness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transparency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Polarity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Regulatory_Body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motivation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Content"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Target_User_Group"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#delinates"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Social"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge_Containers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Negative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Interactive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dependsOn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technique"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Satisfaction"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Efficiency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Single-level"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Developers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Preferences"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Users_Similarity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Items_Similarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transparency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Target_User_Single"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#showsAccordingTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Visual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Justify_Recommendation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Format"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Improve_User_Retention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Top-Level"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDeterminatedBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#influences"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trust"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInfluenced"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Knowledge_Intensive"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUsedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Experiences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Presentation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Other"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#builds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Similarities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Community"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Education"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reactive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comparison"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#defines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBasedOn"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Natural_Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Generation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Differences"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Instrospective"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Debugging"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Algorithm"/>
+        <Class IRI="#Knowledge_Containers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Argumentation"/>
+        <Class IRI="#Presentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comparison"/>
+        <Class IRI="#Argumentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data"/>
+        <Class IRI="#Knowledge_Containers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Detail"/>
+        <Class IRI="#Presentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Format"/>
+        <Class IRI="#Presentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goal"/>
+        <Class IRI="#Motivation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interaction"/>
+        <Class IRI="#Presentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Low-Level"/>
+        <Class IRI="#Goal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Polarity"/>
+        <Class IRI="#Argumentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technique"/>
+        <Class IRI="#Generation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Top-Level"/>
+        <Class IRI="#Goal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transparency"/>
+        <Class IRI="#Generation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <Class IRI="#Motivation"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Technique"/>
+        <NamedIndividual IRI="#Ad-hoc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data"/>
+        <NamedIndividual IRI="#Background_Information"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data"/>
+        <NamedIndividual IRI="#Community"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data"/>
+        <NamedIndividual IRI="#Content"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data"/>
+        <NamedIndividual IRI="#Context"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Low-Level"/>
+        <NamedIndividual IRI="#Debugging"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#Developers"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Comparison"/>
+        <NamedIndividual IRI="#Differences"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Low-Level"/>
+        <NamedIndividual IRI="#Education"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Low-Level"/>
+        <NamedIndividual IRI="#Effectiveness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Low-Level"/>
+        <NamedIndividual IRI="#Efficiency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data"/>
+        <NamedIndividual IRI="#Experiences"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transparency"/>
+        <NamedIndividual IRI="#External"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Top-Level"/>
+        <NamedIndividual IRI="#Improve_User_Experience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Top-Level"/>
+        <NamedIndividual IRI="#Improve_User_Retention"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transparency"/>
+        <NamedIndividual IRI="#Instrospective"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Interaction"/>
+        <NamedIndividual IRI="#Interactive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Algorithm"/>
+        <NamedIndividual IRI="#Items_Similarity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Top-Level"/>
+        <NamedIndividual IRI="#Justify_Recommendation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Technique"/>
+        <NamedIndividual IRI="#Knowledge_Intensive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Technique"/>
+        <NamedIndividual IRI="#Machine_Learning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Technique"/>
+        <NamedIndividual IRI="#Mathematical_Model"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Detail"/>
+        <NamedIndividual IRI="#Multi-level"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Format"/>
+        <NamedIndividual IRI="#Natural_Language"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Polarity"/>
+        <NamedIndividual IRI="#Negative"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Format"/>
+        <NamedIndividual IRI="#Other"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Low-Level"/>
+        <NamedIndividual IRI="#Persuasiveness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Polarity"/>
+        <NamedIndividual IRI="#Positive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data"/>
+        <NamedIndividual IRI="#Preferences"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Interaction"/>
+        <NamedIndividual IRI="#Proactive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Interaction"/>
+        <NamedIndividual IRI="#Reactive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Algorithm"/>
+        <NamedIndividual IRI="#Recommendation_Process"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#Regulatory_Body"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Low-Level"/>
+        <NamedIndividual IRI="#Satisfaction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Format"/>
+        <NamedIndividual IRI="#Schematic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Low-Level"/>
+        <NamedIndividual IRI="#Scrutability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Comparison"/>
+        <NamedIndividual IRI="#Similarities"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Detail"/>
+        <NamedIndividual IRI="#Single-level"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data"/>
+        <NamedIndividual IRI="#Social"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#Stakeholders"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#Target_User_Group"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#Target_User_Single"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Low-Level"/>
+        <NamedIndividual IRI="#Transparency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Low-Level"/>
+        <NamedIndividual IRI="#Trust"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Algorithm"/>
+        <NamedIndividual IRI="#Users_Similarity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Format"/>
+        <NamedIndividual IRI="#Visual"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dependsOn"/>
+        <NamedIndividual IRI="#Improve_User_Experience"/>
+        <NamedIndividual IRI="#Target_User_Group"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dependsOn"/>
+        <NamedIndividual IRI="#Improve_User_Experience"/>
+        <NamedIndividual IRI="#Target_User_Single"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dependsOn"/>
+        <NamedIndividual IRI="#Improve_User_Retention"/>
+        <NamedIndividual IRI="#Stakeholders"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defines"/>
+        <NamedIndividual IRI="#Stakeholders"/>
+        <NamedIndividual IRI="#Improve_User_Retention"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defines"/>
+        <NamedIndividual IRI="#Target_User_Group"/>
+        <NamedIndividual IRI="#Improve_User_Experience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#defines"/>
+        <NamedIndividual IRI="#Target_User_Single"/>
+        <NamedIndividual IRI="#Improve_User_Experience"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#showsAccordingTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#builds"/>
+        <ObjectProperty IRI="#isBuiltBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#defines"/>
+        <ObjectProperty IRI="#dependsOn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#delinates"/>
+        <ObjectProperty IRI="#showsAccordingTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#determinates"/>
+        <ObjectProperty IRI="#isDeterminatedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#influences"/>
+        <ObjectProperty IRI="#isInfluenced"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isBaseOf"/>
+        <ObjectProperty IRI="#isBasedOn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <ObjectProperty IRI="#uses"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#builds"/>
+        <Class IRI="#Low-Level"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#defines"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#delinates"/>
+        <Class IRI="#Goal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dependsOn"/>
+        <Class IRI="#Goal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#determinates"/>
+        <Class IRI="#Format"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#determinates"/>
+        <Class IRI="#Knowledge_Containers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#influences"/>
+        <Class IRI="#Goal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBaseOf"/>
+        <Class IRI="#Generation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBasedOn"/>
+        <Class IRI="#Algorithm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBuiltBy"/>
+        <Class IRI="#Top-Level"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDeterminatedBy"/>
+        <Class IRI="#Detail"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInfluenced"/>
+        <Class IRI="#Argumentation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#showsAccordingTo"/>
+        <Class IRI="#Presentation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#Generation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#builds"/>
+        <Class IRI="#Top-Level"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#defines"/>
+        <Class IRI="#Goal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#delinates"/>
+        <Class IRI="#Presentation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dependsOn"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#determinates"/>
+        <Class IRI="#Detail"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#influences"/>
+        <Class IRI="#Argumentation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBaseOf"/>
+        <Class IRI="#Algorithm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBasedOn"/>
+        <Class IRI="#Generation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBuiltBy"/>
+        <Class IRI="#Low-Level"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDeterminatedBy"/>
+        <Class IRI="#Format"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDeterminatedBy"/>
+        <Class IRI="#Knowledge_Containers"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInfluenced"/>
+        <Class IRI="#Goal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <Class IRI="#Generation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#showsAccordingTo"/>
+        <Class IRI="#Goal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Algorithm</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The explanations are based on the information that the system collects from the recommendation algorithm. The algorithm itself is a knowledge container.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Algorithm</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Argumentation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Explanations can show different outlooks for a recommended item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Argumentation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Argumentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Comparison</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Arguments can be supported using the similarities or the differences between item features and user preferences.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Comparison</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Comparison</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Data</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">These are the explanations based on the information available at the recommender system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Data</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Detail</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The degree of specification about a recommendation included in its explanation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Detail</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Detail</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Format</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The explanations can be shown in different ways, more or less simple.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Format</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Generation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The way to implement the explanation system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Generation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Generation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Goal</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The goal of an explanation is closely related to the user to whom the explanation is targeted.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Goal</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Instrospective</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introspective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Interaction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The different ways of interaction depend on how the user obtains explanations through the system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Interaction</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Interaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Knowledge_Containers</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Explanations for recommender systems can be created based on different types of knowledge sources or containers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Knowledge_Containers</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Knowledge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Low-Level</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The low-level goals help to achieve the top-level goals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Low-Level</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Low-Level_Goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Motivation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Motivation refers to the goal of the explanation according to the target user.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Motivation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Motivation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Polarity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Explanations can show different outlooks for a recommended item: they can present the positive arguments, or they can disclose the negative arguments of this item for the user.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Polarity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Polarity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Presentation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The way the system displays the explanation to the user.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Presentation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Presentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Technique</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Explanation systems must be also classified according to the algorithm used for generating explanations independently of their introspective or external nature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Technique</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Technique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Top-Level</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The top-level goals are focused on the user.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Top-Level</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Top-Level_Goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Transparency</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Recommender systems act in two different ways: as a white box system or as a black box system. A white box system allows users to know the way its reasoning algorithm operates. On the other hand, a black box system does not allow the user to understand its internal behaviour. This way, we can classify explanations as introspective or external if the recommendation system acts as a white box or black box system, respectively.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Transparency</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Encapsulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#User</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Recommender systems are supposed to satisfy user needs. However, explanations do not have to be aimed exclusively at the final user.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#User</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">User</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#determinates</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">determines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isDeterminatedBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">isDeterminedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isInfluenced</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">isInfluencedBy</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
