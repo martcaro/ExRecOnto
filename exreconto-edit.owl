@@ -609,7 +609,7 @@
 
     <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/exreconto.owl#Instrospective">
         <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/exreconto.owl#Encapsulation"/>
-        <rdfs:label>Introspective</rdfs:label>
+        <rdfs:label>Ante_hoc</rdfs:label>
     </owl:NamedIndividual>
     
 
