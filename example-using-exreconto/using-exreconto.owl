@@ -1,0 +1,848 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#"
+     xml:base="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#dependsOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#dependsOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#generate_explanation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#generate_explanation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_argumentation_components -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_argumentation_components">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Argumentation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Argumentation_components"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_comparison -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_comparison">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Argumentation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Comparison"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_goal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_goal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_polarity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_polarity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Argumentation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Polarity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_presentation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_presentation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_presentation_components -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_presentation_components">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation_components"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_user -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_user">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#isBasedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#isBasedOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Encapsulation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#isComposed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#isComposed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Goal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#uses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Knowledge"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Argumentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Argumentation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_argumentation_components"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Argumentation_components"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation_components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Argumentation_components -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Argumentation_components"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Comparison -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Comparison">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Argumentation_components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Detail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Detail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation_components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Encapsulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Encapsulation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#dependsOn"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_presentation"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Format -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Format">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation_components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Goal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Interaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Interaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation_components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Knowledge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Knowledge"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Low-level -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Low-level">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#isComposed"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Goal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#isComposed"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_components -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_components"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Polarity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Polarity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Argumentation_components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#has_presentation_components"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation_components"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation_components -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation_components"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#generate_explanation"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#isBasedOn"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Encapsulation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#uses"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Knowledge"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Top-level -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Top-level">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_components"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ad_hoc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ad_hoc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique"/>
+        <generate_explanation rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Textual"/>
+        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ante-hoc"/>
+        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Post-hoc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ante-hoc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ante-hoc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Encapsulation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Background_Information -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Background_Information">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Community -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Community">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Content -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Content">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Context -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Context">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Debugging -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Debugging">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Low-level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Developer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Developer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Differences -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Differences">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Comparison"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Education -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Education">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Low-level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Effectiveness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Effectiveness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Low-level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Efficiency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Efficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Low-level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Experiences -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Experiences">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Regulatory_Body -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Regulatory_Body">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation"/>
+        <dependsOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_Effectiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Stakeholders -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Stakeholders">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation"/>
+        <dependsOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_Persuasiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_TUG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_TUG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation"/>
+        <dependsOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_Effectiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_TUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_TUS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation"/>
+        <dependsOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_Effectiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Textual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Textual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation"/>
+        <dependsOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_Transparency_TUS"/>
+        <has_presentation rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation_Text_Proactive"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Improve_User_Experience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Improve_User_Experience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Top-level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Improve_User_Retention -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Improve_User_Retention">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Top-level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Interactive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Interactive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Interaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Item_similarity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Item_similarity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Justify_recommendation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Justify_recommendation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Top-level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Knowledge_Intensive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Knowledge_Intensive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique"/>
+        <generate_explanation rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Textual"/>
+        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ante-hoc"/>
+        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Post-hoc"/>
+        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Content"/>
+        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Experiences"/>
+        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Preferences"/>
+        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Social"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Machine_Learning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Machine_Learning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique"/>
+        <generate_explanation rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Textual"/>
+        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ante-hoc"/>
+        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Post-hoc"/>
+        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Item_similarity"/>
+        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User_similarity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Mathematical_Model -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Mathematical_Model">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique"/>
+        <generate_explanation rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Textual"/>
+        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ante-hoc"/>
+        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Post-hoc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_Effectiveness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_Effectiveness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation"/>
+        <has_goal rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Effectiveness"/>
+        <has_user rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Regulatory_Body"/>
+        <has_user rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Target_User_Group"/>
+        <has_user rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Target_User_Single"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_Persuasiveness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_Persuasiveness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation"/>
+        <has_goal rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Persuasiveness"/>
+        <has_user rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Stakeholder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_Transparency_TUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation_Transparency_TUS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Motivation"/>
+        <has_goal rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Transparency"/>
+        <has_user rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Target_User_Single"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Multi-level -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Multi-level">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Detail"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Negative -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Negative">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Polarity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Other -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Other">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Persuasiveness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Persuasiveness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Low-level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Positive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Positive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Polarity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Post-hoc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Post-hoc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Encapsulation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Preferences -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Preferences">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation_Text_Proactive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation_Text_Proactive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Presentation"/>
+        <has_presentation_components rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Proactive"/>
+        <has_presentation_components rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Textual"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Proactive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Proactive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Interaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Reactive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Reactive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Interaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Recommendation_process -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Recommendation_process">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Regulatory_Body -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Regulatory_Body">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Satisfaction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Satisfaction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Low-level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Schematic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Schematic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Scrutability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Scrutability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Low-level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Similarities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Similarities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Comparison"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Single-level -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Single-level">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Detail"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Social -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Social">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Stakeholder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Stakeholder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Target_User_Group -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Target_User_Group">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Target_User_Single -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Target_User_Single">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Textual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Textual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Transparency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Transparency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Low-level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Trust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Trust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Low-level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User_similarity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User_similarity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Visual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Visual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Format"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
