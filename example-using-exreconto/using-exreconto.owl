@@ -376,6 +376,8 @@
         <generate_explanation rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Textual"/>
         <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ante-hoc"/>
         <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Post-hoc"/>
+        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Item_similarity"/>
+        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User_similarity"/>
     </owl:NamedIndividual>
     
 
@@ -571,8 +573,10 @@
         <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Post-hoc"/>
         <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Content"/>
         <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Experiences"/>
+        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Item_similarity"/>
         <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Preferences"/>
         <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Social"/>
+        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User_similarity"/>
     </owl:NamedIndividual>
     
 
@@ -597,6 +601,8 @@
         <generate_explanation rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Textual"/>
         <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ante-hoc"/>
         <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Post-hoc"/>
+        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Item_similarity"/>
+        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User_similarity"/>
     </owl:NamedIndividual>
     
 
