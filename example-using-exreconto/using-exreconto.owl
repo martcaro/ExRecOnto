@@ -106,11 +106,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#isBasedOn -->
+    <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#isBaseOn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#isBasedOn">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#isBaseOn">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Encapsulation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Knowledge"/>
     </owl:ObjectProperty>
     
 
@@ -319,26 +319,7 @@
 
     <!-- http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#generate_explanation"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#isBasedOn"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Encapsulation"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#uses"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Knowledge"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique"/>
     
 
 
@@ -374,9 +355,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ad_hoc">
         <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique"/>
         <generate_explanation rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Textual"/>
-        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ante-hoc"/>
-        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Post-hoc"/>
-        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Item_similarity"/>
+        <isBaseOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Item_similarity"/>
+        <isBaseOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Post-hoc"/>
         <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User_similarity"/>
     </owl:NamedIndividual>
     
@@ -569,14 +549,12 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Knowledge_Intensive">
         <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique"/>
         <generate_explanation rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Textual"/>
-        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ante-hoc"/>
-        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Post-hoc"/>
+        <isBaseOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Item_similarity"/>
+        <isBaseOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User_similarity"/>
         <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Content"/>
         <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Experiences"/>
-        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Item_similarity"/>
         <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Preferences"/>
         <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Social"/>
-        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User_similarity"/>
     </owl:NamedIndividual>
     
 
@@ -586,10 +564,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Machine_Learning">
         <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique"/>
         <generate_explanation rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Textual"/>
-        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ante-hoc"/>
-        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Post-hoc"/>
-        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Item_similarity"/>
-        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User_similarity"/>
+        <isBaseOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Item_similarity"/>
+        <isBaseOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User_similarity"/>
     </owl:NamedIndividual>
     
 
@@ -599,10 +575,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Mathematical_Model">
         <rdf:type rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Technique"/>
         <generate_explanation rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Explanation_Textual"/>
-        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Ante-hoc"/>
-        <isBasedOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Post-hoc"/>
-        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Item_similarity"/>
-        <uses rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User_similarity"/>
+        <isBaseOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#Item_similarity"/>
+        <isBaseOn rdf:resource="http://www.semanticweb.org/marta/ontologies/2021/5/untitled-ontology-33#User_similarity"/>
     </owl:NamedIndividual>
     
 
